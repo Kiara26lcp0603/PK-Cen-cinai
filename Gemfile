@@ -7,12 +7,20 @@ ruby "3.0.2"
 gem "rails", "~> 7.0.8"
 
 # Use mysql as the database for Active Record
-gem "mysql2", "~> 0.5"
+gem "mysql2", "~> 0.5.3"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
 gem 'devise', '~> 4.9', '>= 4.9.3'
+
+gem 'pundit', '~> 2.3', '>= 2.3.1'
+
+gem 'pry'
+
+gem 'pry-byebug'
+
+gem 'rolify', '~> 6.0', '>= 6.0.1'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
