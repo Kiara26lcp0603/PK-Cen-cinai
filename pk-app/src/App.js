@@ -5,6 +5,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Login from './pages/Login/Login';
 import Main from './pages/main/main';
 import Expedientes from './pages/Expedientes/Expedientes';
+import Registros from './pages/Registros/Registros';
+import Leche_daf from './pages/Leche_daf/Leche_daf';
+import Cuido from './pages/Cuido/Cuido';
 
 function App() {
   const router = createBrowserRouter([
@@ -23,12 +26,26 @@ function App() {
      {
       path: "/expedientes",
       element:<Expedientes></Expedientes>
+    },
+    {
+     path: "/Registros",
+     element: <Registros></Registros>
+    },
+    {
+    path: "/Leche_daf",
+    element: <Leche_daf></Leche_daf>
+    },
+    {
+    path: "/Cuido",
+    element: <Cuido></Cuido>
     }
+    
+    
   ])
 
 
   return (
-    <div className=" container App">
+    <div className="App">
 
       <RouterProvider router={router}>
       </RouterProvider>

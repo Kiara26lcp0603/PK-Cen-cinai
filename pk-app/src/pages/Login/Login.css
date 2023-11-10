@@ -1,138 +1,168 @@
-.container {
-  max-width: 350px;
-  background: #F8F9FD;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.132) 0%, rgba(244, 247, 251, 0.575) 100%);
-  border-radius: 40px;
-  padding: 25px 35px;
-  border: 5px solid rgb(255, 255, 255);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px #908e90, 0 0 70px #78a4ac, 0 0 80px #b8e3e8, 0 0 100px #869296;
-  margin: 20px;
+.todo{
+  background-image: url("https://i.pinimg.com/originals/35/14/f6/3514f62fedc63d508eefe9f290bedb73.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
-.heading {
-  text-align: center;
-  font-weight: 900;
-  font-size: 30px;
-  color: rgb(16, 137, 211);
+.loguito {
+
+
+  width: 50%;
+  height: 500px;
+  display: inline-block;
+  /* display: flex;
+  position: absolute;
+  margin-top: -5%;
+  width: 38%;
+  padding: 0%; */
+
+  position: relative;
+  bottom: -145px;
+  margin-left: 50px;
+
 }
 
-.form {
-  margin-top: 20px;
+.loguito img {
+  position: relative;
+  right: -20%;
+  bottom: 10;
+
+  width: 60%;
+
 }
 
-.form .input {
-  width: 100%;
-  background: rgba(249, 249, 249, 0.281);
-  border: none;
-  padding: 15px 20px;
-  border-radius: 20px;
-  margin-top: 15px;
-  box-shadow: #cff0ff 0px 10px 10px -5px;
-  border-inline: 2px solid transparent;
-}
+.formLogin {
 
-.form .input::-moz-placeholder {
-  color: rgb(133, 130, 130);
-}
+  margin-left: 5%;
+  width: 25%;
+  display: inline-flex;
+  height: 500px;
+  justify-content: center;
 
-.form .input::placeholder {
-  color: rgb(133, 130, 130);
-}
+  position: relative;
+  bottom: 50px;
+  background-color: rgba(247, 247, 247, 0.438);
+  border-radius: 10px;
 
-.form .input:focus {
-  outline: none;
-  border-inline: 2px solid #12B1D1;
-}
-
-.form .forgot-password {
-  display: block;
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
-.form .forgot-password a {
-  font-size: 11px;
-  color: #0099ff;
-  text-decoration: none;
-}
-
-.form .login-button {
-  display: block;
-  width: 100%;
-  font-weight: bold;
-  background: linear-gradient(45deg, rgb(16, 137, 211) 0%, rgb(18, 177, 209) 100%);
-  color: white;
-  padding-block: 15px;
-  margin: 20px auto;
-  border-radius: 20px;
-  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
-  border: none;
-  transition: all 0.2s ease-in-out;
-}
-
-.form .login-button:hover {
-  transform: scale(1.03);
-  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
-}
-
-.form .login-button:active {
-  transform: scale(0.95);
-  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 15px 10px -10px;
-}
-
-.social-account-container {
-  margin-top: 25px;
-}
-
-.social-account-container .title {
-  display: block;
-  text-align: center;
-  font-size: 10px;
-  color: rgb(74, 68, 68);
-}
-
-.social-account-container .social-accounts {
-  width: 100%;
+  /* border: red solid 3px;
+  width: 400px;
+  height: 600px;
+  margin-left: 60%; 
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-top: 5px;
+  flex-direction: column;
+  position: relative; 
+  padding-left: 70%;
+  display: inline-block;
+  margin-top: 5%;
+  gap: 10px;
+  padding-bottom: 0.4em;
+  background-color: #610b0b;
+  border-radius: 25px;
+  transition: .4s ease-in-out; */
 }
 
-.social-account-container .social-accounts .social-button {
-  background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(112, 112, 112) 100%);
-  border: 5px solid white;
-  padding: 5px;
-  border-radius: 50%;
-  width: 40px;
-  aspect-ratio: 1;
-  display: grid;
-  place-content: center;
-  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 12px 10px -8px;
-  transition: all 0.2s ease-in-out;
+.form:hover {
+  transform: scale(1.05);
+  border: 1px solid black;
 }
 
-.social-account-container .social-accounts .social-button .svg {
-  fill: white;
-  margin: auto;
-}
-
-.social-account-container .social-accounts .social-button:hover {
-  transform: scale(1.2);
-}
-
-.social-account-container .social-accounts .social-button:active {
-  transform: scale(0.9);
-}
-
-.agreement {
-  display: block;
+#heading {
   text-align: center;
-  margin-top: 15px;
+  margin: 2em;
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px #ffffff, 0 0 70px #d5e248, 0 0 80px #ffffff, 0 0 100px #e5d34b;
 }
 
-.agreement a {
-  text-decoration: none;
-  color: #0099ff;
-  font-size: 9px;
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;background-color: rgba(229, 208, 134, 0.587);
+  box-shadow: inset 2px 5px 10px rgb(228, 173, 90)
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: white;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #000000;
+}
+
+.form .btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2.5em;
+}
+
+.button1 {
+  padding: 0.5em;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  border-radius: 5px;
+  margin-right: 0.5em;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: rgb(193, 248, 193);
+  color: rgb(99, 99, 99);
+}
+
+.button1:hover {
+  background-color: rgb(182, 223, 244);
+  color: rgb(240, 234, 234);
+   box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(238, 239, 243), 0 0 40px #e8e6dc, 0 0 70px rgb(203, 31, 151), 0 0 80px rgb(62, 236, 65), 0 0 100px rgb(7, 46, 146);
+}
+
+.button2 {
+  padding: 0.5em;
+  padding-left: 2.3em;
+  padding-right: 2.3em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: rgb(233, 186, 241);
+  color: rgb(0, 0, 0);
+}
+
+.button2:hover {
+  background-color: pink;
+  color: rgb(244, 242, 242);
+   box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(238, 239, 243), 0 0 40px #e8e6dc, 0 0 70px rgb(203, 123, 31), 0 0 80px rgb(236, 62, 198), 0 0 100px rgb(7, 46, 146);
+}
+
+.button3 {
+  margin-bottom: 3em;
+  padding: 0.5em;
+  border-radius: 5px;
+  margin-left: 25%;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: bisque;
+  color: black
+  
+}
+
+.button3:hover {
+  background-color: rgb(214, 139, 233);
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(238, 239, 243), 0 0 40px #e8e6dc, 0 0 70px rgb(203, 123, 31), 0 0 80px rgb(236, 62, 198), 0 0 100px rgb(7, 46, 146);
 }
