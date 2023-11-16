@@ -22,10 +22,11 @@ function Login() {
 
     <div className='todo'>
       <div className='loguito'> 
-        <img src="https://s3.amazonaws.com/static.graphemica.com/glyphs/i300s/000/003/139/original/0516-300x300.png?1275292963" alt=""  />
+        <img src="https://media.discordapp.net/attachments/1129075941344284852/1173629134912622642/Picsart_23-11-13_01-11-15-307.png?ex=6564a64e&is=6552314e&hm=b7c306b200dfb7fe96fcb8d1cbcec13fe44f7d295da6510ce12787812754c103&=&width=651&height=651" alt=""  />
       </div>
       
       <div className="formLogin">
+        
       <form>
         <p id="heading">Iniciar Sesión</p>
         <div className="field">

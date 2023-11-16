@@ -8,6 +8,11 @@ import Expedientes from './pages/Expedientes/Expedientes';
 import Registros from './pages/Registros/Registros';
 import Leche_daf from './pages/Leche_daf/Leche_daf';
 import Cuido from './pages/Cuido/Cuido';
+import PendienteCuido from './pages/PendienteCuido/PendienteCuido';
+import FormAlimentos from './pages/FormAlimentos/FormAlimentos';
+import FormLeche from './pages/FormLeche/FormLeche';
+import ForMadreLactante from './pages/ForMadreLactante/ForMadreLactante';
+
 
 function App() {
   const router = createBrowserRouter([
@@ -38,8 +43,24 @@ function App() {
     {
     path: "/Cuido",
     element: <Cuido></Cuido>
+    },
+    {
+    path:"/PendienteCuido",
+    element: <PendienteCuido></PendienteCuido>
+    },
+    {
+     path: "/FormAlimentos",
+     element: <FormAlimentos></FormAlimentos>
+    },
+    {
+      path: "/FormLeche",
+      element: <FormLeche></FormLeche>
+    },
+    {
+    path: "/ForMadreLactante",
+    element: <ForMadreLactante></ForMadreLactante>
     }
-    
+
     
   ])
 

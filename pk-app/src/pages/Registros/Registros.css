@@ -1,138 +1,144 @@
+.register{
+  background-image: url("https://media.giphy.com/media/VWBrIfcoH3pqU/giphy.gif");
+  background-repeat: no-repeat;
+    background-size: cover;
+display: flex;
+width: 100vw;
+height: 100vh;
+justify-content: center
+
+}
+
+
 .form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 350px;
-    padding: 20px;
-    border-radius: 20px;
-    position: relative;
-   background-image: url("https://i.pinimg.com/474x/92/3d/24/923d247dbeb05ebc2261b19649c81c28--kawaii-wallpaper-wallpaper-backgrounds.jpg");
-    border: 1px solid #ccc2c25d;
-     box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(238, 239, 243), 0 0 40px #e8e6dc, 0 0 70px rgb(203, 31, 151), 0 0 80px rgb(236, 62, 198), 0 0 100px rgb(7, 46, 146);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  max-width: 350px;
+  background-color: rgba(255, 255, 255, 0.333);
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 87, 87, 0.532);
+  position: relative;
+}
+
+.title {
+  font-size: 28px;
+  color: rgb(232, 136, 85);
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title::before,.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: rgb(232, 151, 101);
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: rgb(225, 156, 65);
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message, .signin {
+color: rgb(224, 42, 151);
+  font-size: 20px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: rgb(225, 145, 65);
+}
+
+.signin a:hover {
+  text-decoration: underline rgb(180, 129, 232);
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgb(175, 145, 84);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: rgb(128, 128, 128);
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: rgb(242, 111, 46);
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: rgb(225, 140, 65);
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+}
+
+.submit:hover {
+  background-color: rgb(194, 56, 116);
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
   }
-  
-  .title {
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: -1px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
-    color: purple;
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
   }
-  
-  .title::before {
-    width: 18px;
-    height: 18px;
-  }
-  
-  .title::after {
-    width: 18px;
-    height: 18px;
-    animation: pulse 1s linear infinite;
-  }
-  
-  .title::before,
-  .title::after {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    left: 0px;
-    background-color: #00bfff;
-  }
-  
-  .message, 
-  .signin {
-    font-size: 14.5px;
-   color: rgb(196, 75, 156);
-  }
-  
-  .signin {
-    text-align: center;
-  }
-  
-  .signin a:hover {
-    text-decoration: underline royalblue;
-  }
-  
-  .signin a {
-    color: rgba(92, 181, 210, 0.66);
-  }
-  
-  .flex {
-    display: flex;
-    width: 100%;
-    gap: 6px;
-  }
-  
-  .form label {
-    position: relative;
-  }
-  
-  .form label .input {
-    background-color: rgba(236, 223, 223, 0.062)8f8;
-    color: #ffffff34;
-    width: 100%;
-    padding: 20px 05px 05px 10px;
-    outline: 0;
-    border: 1px solid #c1e4f147;
-    border-radius: 10px;
-  }
-  
-  .form label .input + span {
-    color: rgba(255, 255, 255, 0.5);
-    position: absolute;
-    left: 10px;
-    top: 0px;
-    font-size: 0.9em;
-    cursor: text;
-    transition: 0.3s ease;
-  }
-  
-  .form label .input:placeholder-shown + span {
-    top: 12.5px;
-    font-size: 0.9em;
-  }
-  
-  .form label .input:focus + span,
-  .form label .input:valid + span {
-    color: purple;
-    top: 0px;
-    font-size: 0.7em;
-    font-weight: 600;
-  }
-  
-  .input {
-    font-size: medium;
-    background-color: rgba(193, 228, 241, 0.559);
-  }
-  
-  .submit {
-    border: none;
-    outline: none;
-    padding: 10px;
-    border-radius: 10px;
-    color: rgba(255, 255, 255, 0.79);
-    font-size: 16px;
-    transform: .3s ease;
-    background-color: #e76fc997;
-  }
-  
-  .submit:hover {
-    background-color: rgba(82, 187, 222, 0.902);
-  }
-  
-  @keyframes pulse {
-    from {
-      transform: scale(0.9);
-      opacity: 1;
-    }
-  
-    to {
-      transform: scale(1.8);
-      opacity: 0;
-    }
-  }
+}
